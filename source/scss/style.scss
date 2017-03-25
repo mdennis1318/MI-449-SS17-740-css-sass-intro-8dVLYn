@@ -1,0 +1,136 @@
+@import "_variables";
+
+a {
+  color: $primary-color;
+}
+
+button {
+  color: $primary-color;
+  border-color: $primary-color;
+  background-color: lighten($primary-color, 50%);
+}
+
+body {
+  font-family: $sans-fonts;
+}
+
+h1 {
+  font-size: $font-base-size * 2.5;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: $font-base-size * 2.25;
+  color: $secondary-color;
+}
+
+h3 {
+  font-size: $font-base-size * 2;
+  color: $quarternary-color;
+}
+
+h4 {
+  font-size: $font-base-size * 1.75;
+  color: $tertiary-color;
+}
+
+h5 {
+  font-size: $font-base-size * 1.5;
+  color: $primary-color;
+}
+
+h6 {
+  font-size: $font-base-size * 1.25;
+  color: $secondary-color;
+}
+
+p {
+  color: lighten($primary-color, 25%);
+
+  a {
+    color: lighten($secondary-color, 25%);
+
+    &:hover {
+      color: $tertiary-color;
+    }
+
+    &:visited {
+      color: $quarternary-color;
+    }
+  }
+}
+
+input {
+  font-size: $font-base-size;
+  border-radius: $standard-radius;
+  background-color: $primary-color;
+  color: $secondary-color;
+
+  &:hover {
+    background-color: lighten($primary-color, 5%);
+    color: lighten($secondary-color, 5%);
+  }
+
+  &.danger {
+    background-color: lighten($secondary-color, 25%);
+    color: black;
+
+    &:hover {
+      background-color: lighten($secondary-color, 35%);
+    }
+  }
+
+  &.passwd {
+    background-color: lighten($primary-color, 25%);
+    color: #333;
+  }
+
+  &.input-text {
+    background-color: white;
+    color: lighten($secondary-color, 25%);
+  }
+}
+
+label {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  border-radius: $standard-radius;
+}
+
+textarea {
+  font-size: $font-base-size;
+  border-radius: $standard-radius;
+  color: $tertiary-color;
+
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+img {
+  border-radius: $standard-radius;
+  margin: auto;
+  display: block;
+  width: 50%;
+}
+
+figcaption {
+  color: darken($tertiary-color, 25%);
+  text-align: center;
+}
+
+table {
+  border: 3px dotted $secondary-color;
+
+  thead {
+    color: $primary-color;
+
+    th {
+      border-bottom: 3px dotted $primary-color;
+    }
+  }
+
+  tbody {
+    color: $secondary-color;
+  }
+}
