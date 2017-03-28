@@ -85,7 +85,7 @@ input {
     color: #333;
   }
 
-  &[type="input-text"] {
+  &[type="text"] {
     background-color: white;
     color: lighten($secondary-color, 25%);
   }
